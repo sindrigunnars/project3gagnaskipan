@@ -1,4 +1,3 @@
-
 class Node:
     def __init__(self, data=None, prev=None, next=None):
         self.data = data
@@ -31,7 +30,6 @@ class DLL:
         self.current = nn
         self.size += 1
 
-
     def remove(self):
         if self.current != self.sentinel:
             self.current.prev.next, self.current.next.prev  = self.current.next, self.current.prev
@@ -48,7 +46,6 @@ class DLL:
     def move_to_next(self):
         if self.current != self.sentinel:
             self.current = self.current.next
-
 
     def move_to_prev(self):
         if self.current.prev != self.sentinel:

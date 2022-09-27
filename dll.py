@@ -1,4 +1,3 @@
-
 class Node:
     def __init__(self, data=None, prev=None, next=None):
         self.data = data
@@ -119,13 +118,6 @@ class DLL:
         else:
             self.ordered = True
         self.move_to_pos(0)
-        # if self.sentinel.next == self.sentinel:
-        #     return
-        # temp = self.sentinel.prev
-        # while temp != self.sentinel:
-        #     temp.next, temp.prev = temp.prev, temp.next
-        #     temp = temp.next
-        # self.sentinel.next, self.sentinel.prev, self.current = self.sentinel.prev, self.sentinel.next, self.sentinel.prev
 
     def sort(self):
         if self.ordered:
