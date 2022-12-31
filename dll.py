@@ -3,6 +3,7 @@ class Node:
         self.data = data
         self.prev = prev
         self.next = next
+	self.dad = 0
 
 class DLL:
     def __init__(self):
